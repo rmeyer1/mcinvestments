@@ -1,6 +1,6 @@
 {
-    "extends": ["plugin:react/recommended", "prettier"],
-    "plugins": ["react", "prettier"],
+    "extends": ["plugin:react/recommended", "prettier", "plugin:jsx-a11y/recommended"],
+    "plugins": ["react", "prettier", "jsx-a11y"],
     "parserOptions": {
       "ecmaVersion": 2021,
       "sourceType": "module",
@@ -16,7 +16,8 @@
     "rules": {
       "prettier/prettier": "error",
       "react/prop-types": 0,
-      "react/react-in-jsx-scope": "off"
+      "react/react-in-jsx-scope": "off",
+      "jsx-a11y/anchor-is-valid": "off"
     },
     "settings": {
       "react": {
