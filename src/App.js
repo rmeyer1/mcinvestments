@@ -7,7 +7,7 @@ import About from './components/about/about'; // Make sure this path is correct
 import Portfolio from './components/portfolio/portfolio'; // Make sure this path is correct
 import Footer from './components/footer/footer';
 import PaymentCalculator from './components/paymentCalculator/paymentCalculator'; // Make sure this path is correct
-
+import Events from './components/events/events'; // Make sure this path is correct
 function App() {
   return (
     <Router>
@@ -17,6 +17,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/" element={<Home />} />
         <Route path="/payment-calculator" element={<PaymentCalculator />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
       <Footer />
     </Router>
